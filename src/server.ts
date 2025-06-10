@@ -1,6 +1,10 @@
-import fastify, { FastifyInstance } from "fastify";
-
+import fastify, { FastifyInstance } from 'fastify';
+import { userRouter } from './routers/user.router';
 const app: FastifyInstance = fastify({logger: true});
+
+app.register(userRouter, {
+    prefix: '/users',
+});
 
 app.listen ({
     port: 3000,
