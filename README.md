@@ -1,4 +1,4 @@
-## API de agenda de contatos
+## API - de agenda de contatos
 
 Está é a documentação de requisitos para a API de agenda de contato. Está API permite aos usuários gerenciar contatos, categorizá-los e realizar operações de CRUD.
 
@@ -8,16 +8,16 @@ Está é a documentação de requisitos para a API de agenda de contato. Está A
 
 ## Requisitos Funcionais
 
-- [] Cadastramento de contatos
-- [] Visualização de contatos
-- [] Atualização de Contatos existentes
-- [] Exclusão de contatos
+- Cadastramento de contatos
+- Visualização de contatos
+- Atualização de Contatos existentes
+- Exclusão de contatos
 
 ## Requisitos de autenticação e autorização
 
-- [] Autenticação de usuários
-- [] Autorização de acesso às Operações
-- [] Criação de usuário
+- Autenticação de usuários
+- Autorização de acesso às Operações
+- Criação de usuário
 
 ## Regras de Negócios
 
@@ -31,8 +31,6 @@ Está é a documentação de requisitos para a API de agenda de contato. Está A
 
 ## Agradecimentos
 
-
 ## Desenvolvido por
-
 
 ## Stack utilizada
