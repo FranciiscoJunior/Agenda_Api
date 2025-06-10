@@ -2,7 +2,7 @@ import { FastifyInstance } from "fastify";
 import { UserUseCase } from "../usecases/user.usecases";
 import { UserCreate } from "../interface/user.interface";
 
-async function userRouter(fastify: FastifyInstance){
+export async function userRouter(fastify: FastifyInstance){
     const userUseCase = new UserUseCase()
     fastify.post<{Body: UserCreate}>('/', (req, reply) => {
 

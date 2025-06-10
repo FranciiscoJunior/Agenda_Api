@@ -29,7 +29,7 @@ Está é a documentação de requisitos para a API de agenda de contato. Está A
 - Todos os dados da API devem ser armazenados de forma segura e protegidas contra acesso não autorizados;
 - As entradas do usuário devem ser validades para evitar a inserção de dados incorretas e ou maliciosas.
 
-## Agradeciments
+## Agradecimentos
 
 
 ## Desenvolvido por
