@@ -31,6 +31,9 @@ Está é a documentação de requisitos para a API de agenda de contato. Está A
 
 ## Agradecimentos
 
+- Agradeço a Deus pela oportunidade de aprendizado e pelo conhecimento,e experiência adquirida durante o desenvolvimento deste presente projeto, o qual agregou ao meu currículo enquanto profissional em constante aprendizado, contribuindo para o meu crescimento.
+
 ## Desenvolvido por
+
 
 ## Stack utilizada
