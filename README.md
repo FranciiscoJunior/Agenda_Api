@@ -35,5 +35,6 @@ Está é a documentação de requisitos para a API de agenda de contato. Está A
 
 ## Desenvolvido por
 
+- Confira o meu perfil: [FranciiscoJunior](https://github.com/FranciiscoJunior)
 
 ## Stack utilizada
