@@ -1,15 +1,15 @@
-import { FastifyInstance } from "fastify";
-import { UserUseCase } from "../usecases/user.usecases";
-import { UserCreate } from "../interface/user.interface";
+import { FastifyInstance } from 'fastify';
+import { UserCreate } from '../interface/user.interface';
+import { UserUseCase } from '../usecases/user.usecases';
 
-export async function userRouter(fastify: FastifyInstance){
-    const userUseCase = new UserUseCase()
-    fastify.post<{Body: UserCreate}>('/', (req, reply) => {
-
+export async function userRouter(fastify: FastifyInstance) {
+    const userUseCase = new UserUseCase();
+    // ...existing code...
+    fastify.post<{Body: UserCreate}>('/', async (req, reply) => {
         const { name, email } = req.body;
 
         try {
-            const data = userUseCase.create({
+            const data = await userUseCase.create({
                 name,
                 email,
             });

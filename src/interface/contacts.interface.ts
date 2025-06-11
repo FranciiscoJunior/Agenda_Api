@@ -1,7 +1,19 @@
-export interface User {
+export interface Contact {
     id: string;
     email: string;
     name: string;
     phone: string;
     userId: string;
+}
+
+export interface ContactCreate {
+    email: string;
+    name: string;
+    phone: string;
+    userEmail: string;
+}
+
+export interface ContactRepository {
+    create(data: ContactCreate): Promise<Contact>;
+    findByEmailOrPhone(email: string, phone: string): Promise<Contact | null>;
 }
