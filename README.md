@@ -8,16 +8,16 @@ Está é a documentação de requisitos para a API de agenda de contato. Está A
 
 ## Requisitos Funcionais
 
-- Cadastramento de contatos
-- Visualização de contatos
-- Atualização de Contatos existentes
-- Exclusão de contatos
+- [ ] Cadastramento de contatos
+- [ ] Visualização de contatos
+- [ ] Atualização de Contatos existentes
+- [ ] Exclusão de contatos
 
 ## Requisitos de autenticação e autorização
 
-- Autenticação de usuários
-- Autorização de acesso às Operações
-- Criação de usuário
+- [ ] Autenticação de usuários
+- [ ] Autorização de acesso às Operações
+- [ ] Criação de usuário
 
 ## Regras de Negócios
 

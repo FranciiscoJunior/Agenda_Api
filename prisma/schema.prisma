@@ -12,7 +12,7 @@ datasource db {
 }
 
 model User {
-  id String @id @default(uuid())
+  id String @id @default(ulid())
   name String
   email String @unique
   createdAt DateTime @default(now())
@@ -27,7 +27,8 @@ model Contacts {
   name String
   email String
   phone String
-  user User @relation(fields: [userId], refences: [id])
+  userId String
+  user User @relation(fields: [userId], references: [id])
 
   @@map("contacts")
 }
