@@ -1,13 +1,21 @@
-import { UserRepository, UserCreate, User } from "../interfaces/user.interface";
-import { UserRepositoryPrisma } from "../repositories/user.rerpository";
+import { UserRepository, UserCreate, User } from '../interfaces/user.interface';
+import { UserRepositoryPrisma } from '../repositories/user.repository';
     class UserUseCase {
-        private userRepository: UserRepository
+        private userRepository: UserRepository;
         constructor() {
-        this.userRepository = new UserRepositoryPrisma()
+        this.userRepository = new UserRepositoryPrisma();
     }
 
-    async create({name, email}: UserCreate): Promisse <User/> {
+    async create({name, email}: UserCreate): Promise<User> {
+        const verifyIfUserExists = await this.userRepository.findByEmail(email);
 
+        if(verifyIfUserExists) {
+            throw new Error('User already exists');
+        }
+
+        const result = await this.userRepository.create({email, name});
+
+        return result;
     }
 }
 
