@@ -3,7 +3,7 @@ export interface Contact {
     name: string;
     email: string;
     phone: string;
-    userId: string
+    userId?: string
 }
 
 export interface ContactCreate {
@@ -13,6 +13,16 @@ export interface ContactCreate {
     userEmail: string;
 }
 
-export interface ContactrRepository {
-    create(data: ContactCreate): Promise<Contact>;
+export interface ContactCreateData {
+    email: string;
+    name: string;
+    phone: string;
+    userId: string;
+}
+
+export interface ContactRepository {
+    create({email, name, phone, userId}: ContactCreateData): Promise<Contact>;
+    findByEmailOrPhone(email: string, phone: string): Promise<Contact | null>;
+    findAllContacts(userId: string): Promise<Contact[]>;
+    updateContact({id, name, email, phone}: Contact): Promise<Contact>;
 }

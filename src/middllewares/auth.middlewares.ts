@@ -1,4 +1,4 @@
-export function authMiddleares(req, reply) {
+export async function authMiddleares(req, reply) {
     const apiEmail = req.headers ['email'];
 
     if (!apiEmail) {

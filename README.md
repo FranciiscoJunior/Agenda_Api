@@ -8,8 +8,8 @@ Está é a documentação de requisitos para a API de agenda de contato. Está A
 
 ## Requisitos Funcionais
 
-- [ ] Cadastramento de contatos
-- [ ] Visualização de contatos
+- [X] Cadastramento de contatos
+- [X] Visualização de contatos
 - [ ] Atualização de Contatos existentes
 - [ ] Exclusão de contatos
 
@@ -39,4 +39,4 @@ Está é a documentação de requisitos para a API de agenda de contato. Está A
 
 ## Stack utilizadas
 
-- 
+- NODE.JS, FASTIFY & PRISMA
