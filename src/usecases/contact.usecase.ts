@@ -37,10 +37,10 @@ class ContactUseCase {
         }
 
         const contact = await this.contactRepository.create({
-            email,
-            name,
-            phone,
-            userId: user.id,
+                email,
+                name,
+                phone,
+                userId: user.id,
         });
 
         return contact;
@@ -65,6 +65,13 @@ class ContactUseCase {
             email,
             phone,
         });
+
+        return data;
+    }
+
+    async delete (id: string) {
+
+        const data = await this.contactRepository.delete(id);
 
         return data;
     }

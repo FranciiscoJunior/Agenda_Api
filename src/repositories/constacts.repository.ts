@@ -1,7 +1,6 @@
 import { prisma } from '../database/prisma-client';
 import {
     Contact,
-    ContactCreate,
     ContactCreateData,
     ContactRepository,
 } from '../interfaces/contacts.interface';
@@ -47,7 +46,7 @@ class ContactsRepositoryPrisma implements ContactRepository {
         return result;
     }
 
-    updateContact({ id, name, email, phone }: Contact): Promise<Contact> {
+    async updateContact({ id, name, email, phone }: Contact): Promise<Contact> {
         const result = await prisma.contacts.update({
             where: {
                 id,
@@ -60,6 +59,17 @@ class ContactsRepositoryPrisma implements ContactRepository {
         });
 
         return result;
+    }
+
+    async delete(id: string): Promise<boolean> {
+
+        const result = await prisma.contacts.delete({
+            where: {
+                id,
+            },
+        });
+
+        return result ? true : false;
     }
 }
 

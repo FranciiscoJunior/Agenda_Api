@@ -1,4 +1,6 @@
-export async function authMiddleares(req, reply) {
+import { FastifyReply, FastifyRequest } from "fastify";
+
+export async function authMiddleares(req: FastifyRequest, reply: FastifyReply) {
     const apiEmail = req.headers ['email'];
 
     if (!apiEmail) {

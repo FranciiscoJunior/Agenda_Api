@@ -10,14 +10,14 @@ Está é a documentação de requisitos para a API de agenda de contato. Está A
 
 - [X] Cadastramento de contatos
 - [X] Visualização de contatos
-- [ ] Atualização de Contatos existentes
+- [X] Atualização de Contatos existentes
 - [ ] Exclusão de contatos
 
 ## Requisitos de autenticação e autorização
 
-- [ ] Autenticação de usuários
-- [ ] Autorização de acesso às Operações
-- [ ] Criação de usuário
+- [X] Autenticação de usuários
+- [X] Autorização de acesso às Operações
+- [X] Criação de usuário
 
 ## Regras de Negócios
 

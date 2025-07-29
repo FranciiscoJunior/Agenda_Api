@@ -1,7 +1,7 @@
-import fastify, { FastifyInstance } from 'fastify';
+import fastify from 'fastify';
 import {userRoutes} from './routes/user.routes';
 import {contactsRoutes} from './routes/contact.routes';
-const app: FastifyInstance = fastify();
+const app = fastify();
 
 app.register(userRoutes, {
     prefix: '/users',
