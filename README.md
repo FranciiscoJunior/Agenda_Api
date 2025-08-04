@@ -11,7 +11,7 @@ Está é a documentação de requisitos para a API de agenda de contato. Está A
 - [X] Cadastramento de contatos
 - [X] Visualização de contatos
 - [X] Atualização de Contatos existentes
-- [ ] Exclusão de contatos
+- [X] Exclusão de contatos
 
 ## Requisitos de autenticação e autorização
 
@@ -25,7 +25,7 @@ Está é a documentação de requisitos para a API de agenda de contato. Está A
 - O e-mail deve ser uma chave unica;
 - Os contatos devem conter pelo menos um nome e uma forma de contato (Número de telefone, endereço de e-mail, etc...);
 - Somente usuários autenticados podem executar operações de criação, atualização e exclusão de contatos;
-- A autorização é a baseada em funções de usuário, como admnistrador e usuário regular;
+- A autorização é a baseada em funções de usuário, como administrador e usuário regular;
 - Todos os dados da API devem ser armazenados de forma segura e protegidas contra acesso não autorizados;
 - As entradas do usuário devem ser validades para evitar a inserção de dados incorretas e ou maliciosas.
 
